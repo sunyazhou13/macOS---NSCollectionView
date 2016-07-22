@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CollectionViewItem" customModule="SlidesMagic" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="a5w-CX-j3o" id="mkY-mF-73J"/>
+                <outlet property="textField" destination="dJY-Ot-D4h" id="XoI-U1-VKj"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a5w-CX-j3o">
+                    <rect key="frame" x="0.0" y="30" width="480" height="242"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Mk9-Ot-2xW"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dJY-Ot-D4h">
+                    <rect key="frame" x="-2" y="0.0" width="484" height="30"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="cfX-Bo-EDV">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dJY-Ot-D4h" secondAttribute="trailing" id="Hm1-gh-c8x"/>
+                <constraint firstItem="a5w-CX-j3o" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="LaR-kh-Iq0"/>
+                <constraint firstItem="dJY-Ot-D4h" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="S83-jc-tmf"/>
+                <constraint firstAttribute="bottom" secondItem="a5w-CX-j3o" secondAttribute="bottom" constant="30" id="bPF-uT-scf"/>
+                <constraint firstAttribute="trailing" secondItem="a5w-CX-j3o" secondAttribute="trailing" id="dcH-Ct-t6e"/>
+                <constraint firstAttribute="bottom" secondItem="dJY-Ot-D4h" secondAttribute="bottom" id="hhw-xp-UIg"/>
+                <constraint firstItem="a5w-CX-j3o" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="pIg-Sh-XIg"/>
+                <constraint firstItem="dJY-Ot-D4h" firstAttribute="top" secondItem="a5w-CX-j3o" secondAttribute="bottom" id="vmk-Fo-vgF"/>
+            </constraints>
+        </customView>
+        <collectionViewItem id="ydW-IO-iAV" customClass="CollectionViewItem" customModule="SlidesMagic" customModuleProvider="target"/>
+    </objects>
+</document>
